@@ -34,21 +34,21 @@ class TestAppMVVMTests: XCTestCase {
     }
 
     func testInitialDefaults() {
-//        let vm = AuthenticateViewModel()
-//        XCTAssertEqual(nil, vm.email)
-//        XCTAssertEqual(nil, vm.password)
-//        XCTAssertNil(vm.delegate)
+        let vm = AuthenticateViewModel()
+        XCTAssertEqual(nil, vm.email)
+        XCTAssertEqual(nil, vm.password)
+        XCTAssertNil(vm.delegate)
     }
     func testEmail()
     {
-//        let vm = AuthenticateViewModel()
-//        vm.email = "kayzinthaw@example.com"
-//        XCTAssertEqual("kayzinthaw@example.com", vm.email)
+        let vm = AuthenticateViewModel()
+        vm.email = "kayzinthaw.example@gmail.com"
+        XCTAssertEqual("kayzinthaw.2211@gmail.com", vm.email)
     }
     func testPassword()
     {
-//        let vm = AuthenticateViewModel()
-//        vm.password = "password"
-//        XCTAssertEqual("password", vm.password)
+        let vm = AuthenticateViewModel()
+        vm.password = "Kayzin@123"
+        XCTAssertEqual("Kayzin@123", vm.password)
     }
 }
